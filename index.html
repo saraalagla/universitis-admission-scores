@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نسب قبول الجامعات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #004d40;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0288d1;
+            padding: 20px;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        input[type="text"] {
+            margin-top: 10px;
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #004d40;
+        }
+
+        .university {
+            background-color: #ffffff;
+            border: 1px solid #004d40;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .details-btn {
+            background-color: #0288d1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .details-btn:hover {
+            background-color: #0277bd;
+        }
+
+        .details-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            display: none;
+        }
+
+        .details-table, .details-table th, .details-table td {
+            border: 1px solid #004d40;
+        }
+
+        .details-table th, .details-table td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>نسب قبول الجامعات</h1>
+    <input type="text" id="search" placeholder="ابحث عن الجامعة أو التخصص" onkeyup="searchUniversity()">
+</header>
+
+<section class="university">
+    <h2>جامعة أم القرى</h2>
+    <button class="details-btn" onclick="toggleDetails('uq_table')">عرض التفاصيل</button>
+    <table id="uq_table" class="details-table">
+        <tr>
+            <td>كلية الطب</td>
+            <td>95.7%</td>
+        </tr>
+        <tr>
+            <td>كلية طب الاسنان</td>
+            <td>95.3%</td>
+        </tr>
+        <tr>
+            <td>كلية الصيدلة</td>
+            <td>88.5%</td>
+        </tr>
+        <tr>
+            <td>كلية العلوم الطبية التطبيقية</td>
+            <td>87.3%</td>
+        </tr>
+        <tr>
+            <td>كلية التمريض</td>
+            <td>89.7%</td>
+        </tr>
+        <tr>
+            <td>الفيزياء الطبية</td>
+            <td>86.08%</td>
+        </tr>
+        <tr>
+            <td>كلية الحاسب الآلي</td>
+            <td>82.99%</td>
+        </tr>
+        <tr>
+            <td>كلية الشريعة</td>
+            <td>83.69%</td>
+        </tr>
+    </table>
+</section>
+
+<section class="university">
+    <h2>جامعة الملك عبدالعزيز</h2>
+    <button class="details-btn" onclick="toggleDetails('kaau_table')">عرض التفاصيل</button>
+    <table id="kaau_table" class="details-table">
+        <tr>
+            <th>التخصص</th>
+            <th>نسبة القبول</th>
+        </tr>
+        <tr>
+            <td>كلية الطب</td>
+            <td>96.8%</td>
+        </tr>
+        <tr>
+            <td>كلية طب الاسنان</td>
+            <td>92.5%</td>
+        </tr>
+        <tr>
+            <td>كلية الصيدلة</td>
+            <td>91.7%</td>
+        </tr>
+        <tr>
+            <td>كلية العلوم الطبية التطبيقية</td>
+            <td>90%</td>
+        </tr>
+        <tr>
+            <td>كلية التمريض</td>
+            <td>88.7%</td>
+        </tr>
+        <tr>
+            <td>كلية الهندسة</td>
+            <td>97.09%</td>
+        </tr>
+        <tr>
+            <td>كلية الحاسبات وتقنية المعلومات</td>
+            <td>93.2%</td>
+        </tr>
+        <tr>
+            <td>كلية الحقوق</td>
+            <td>85.7%</td>
+        </tr>
+    </table>
+</section>
+
+<section class="university">
+    <h2>جامعة الملك خالد</h2>
+    <button class="details-btn" onclick="toggleDetails('kaau_table')">عرض التفاصيل</button>
+    <table id="kaau_table" class="details-table">
+        <tr>
+            <th>التخصص</th>
+            <th>نسبة القبول</th>
+        </tr>
+        <tr>
+            <td>كلية الطب</td>
+            <td>99.70%</td>
+        </tr>
+        <tr>
+            <td>كلية طب الاسنان</td>
+            <td>99.26%</td>
+        </tr>
+        <tr>
+            <td>العلوم الإنسانية</td>
+            <td>96.89%</td>
+        </tr>
+        <tr>
+            <td>كلية العلوم الطبية التطبيقية</td>
+            <td>97.97%</td>
+        </tr>
+        <tr>
+            <td>كلية الهندسة</td>
+            <td>98.70%</td>
+        </tr>
+        <tr>
+            <td>كلية اللغات والترجمة </td>
+            <td>93.2%</td>
+        </tr>
+        <tr>
+            <td>كلية علوم الحاسبب</td>
+            <td>98.42%</td>
+        </tr>
+    </table>
+</section>
+
+<section class="university">
+    <h2>جامعة الملك سعود</h2>
+    <button class="details-btn" onclick="toggleDetails('kaau_table')">عرض التفاصيل</button>
+    <table id="kaau_table" class="details-table">
+        <tr>
+            <th>التخصص</th>
+            <th>نسبة القبول</th>
+        </tr>
+        <tr>
+            <td>كلية الطب</td>
+            <td>95.45%</td>
+        </tr>
+        <tr>
+            <td>كلية طب الاسنان</td>
+            <td>91.05%</td>
+        <tr>
+            <td>كلية الصيدلة</td>
+            <td>86.90%</td>
+        </tr>
+        <tr>
+            <td>كلية العلوم الطبية التطبيقية</td>
+            <td>78.80%</td>
+        </tr>
+        <tr>
+            <td>كلية الهندسة</td>
+            <td>88.30%</td>
+        </tr>
+        <tr>
+            <td>كلية الحاسبات وتقنية المعلومات</td>
+            <td>97.50%</td>
+        </tr>
+    </table>
+</section>
+
+<script>
+    function toggleDetails(tableId) {
+        var table = document.getElementById(tableId);
+        if (table.style.display === "none" || table.style.display === "") {
+            table.style.display = "table";
+        } else {
+            table.style.display = "none";
+        }
+    }
+
+    function searchUniversity() {
+        var input, filter, sections, university, i, txtValue;
+        input = document.getElementById("search");
+        filter = input.value.toUpperCase();
+        sections = document.getElementsByClassName("university");
+
+        for (i = 0; i < sections.length; i++) {
+            university = sections[i].getElementsByTagName("h2")[0];
+            txtValue = university.textContent || university.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                sections[i].style.display = "";
+            } else {
+                sections[i].style.display = "none";
+            }
+        }
+    }
+</script>
+</body>
+</html>
